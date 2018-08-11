@@ -1,24 +1,35 @@
 body {
     widows: 100%;
     background: #cccccc;
-    width: 960px;
+    width: unset;
     margin: 0 auto;
     text-align: left;
+    border: solid 30px;
+    border-color: white;
+    height:100%;
+    overflow-y: auto;
+    
+}
+#description {
+    position: relative;
+    z-index: 100;
+}
+
+
+header {
+    color: white;
+    float:left;
+    background: #ffffff;
+    background-color: #4aaaa5;
+    font-size: 18px;
+    top:0;
+    position: fixed;
+    padding: 9px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
     
 }
 
 
-
-header {
-    float:left;
-    background: #ffffff;
-    background-color: #4aaaa5;
-    font-size: 15px;
-    top:0;
-    position: fixed;
-    padding: 5px;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-}
 
 .container {
     width: 960px;
@@ -27,8 +38,29 @@ header {
     background: #ffffff;
     clear: both;
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    position: fixed;
+    top: 150px;
+    
+    
 }
 
+.container2 {
+    border: solid 2px black;
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    float: left;
+    height: auto;
+}
+
+.container2::after {
+    content: "";
+    clear:both;
+    display: table;
+}
+ul{
+    margin-right: 200px;
+}
 li {
     float: left;
     list-style: none;
@@ -37,8 +69,17 @@ li {
 }
 .Nav {
     float:right;
-    background-color: white;
     list-style: none;
+    letter-spacing: 3px;
+    text-align: left;
+    text-emphasis: none;
+    font-display: none;
+}
+
+link:hover {
+    font-display: grey;
+    text-emphasis: none;
+    display: none;
 }
 
 a{
@@ -52,17 +93,17 @@ a{
     top: 100px;
     color: cadetblue;
     background-color: #ffffff;
+    width: 960px;
+    font-size: 30px;
+    padding-left:   15px;
+    border-bottom:solid 2px grey;
 }
 
 .profile {
     float: left;
-    position: fixed;
-    top: 33%;
 }
-
-.pictures{
-    position: fixed;
-    top: 200px;
+.text-center {
+    text-align: none;
 }
 
 .btn{
@@ -72,15 +113,26 @@ a{
 }
 
 .Content{
-    float: none;
-    position: relative;
-    top: 200px;
+    position: absolute;
+    top: 150%;
     width: 960px;
     background: #ffffff;  
+    line-height: 40px;
+}
+
+h2{
+    color: #4aaaa5;
+    border-bottom: solid 1px #666666;
+}
+
+.pictures {
+    float: left;
+    width: 33%
 }
 
 footer{
     position: fixed;
+    font-size: 12px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -88,11 +140,44 @@ footer{
     padding: 10px;
     color: white;
     text-align: center;
-    border: 2px solid #4aaaa5;
+    border-top: 3px solid #4aaaa5;
 }
 
 .name, .email, .msg {
-    
+    padding-bottom:30px;
     margin-top: auto;
-    
+}
+
+.input{
+    font-size:20px;
+    width: 900px;
+    height: 20px;
+    text-align: justify;
+}
+
+.input2{
+    width: 900px;
+    height: 100px;
+}
+
+img {
+    clear: none;
+   
+    padding-bottom: 15px;
+}
+
+.card {
+    border: none;
+}
+
+.t1 {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2{
+    padding:15px;
 }
